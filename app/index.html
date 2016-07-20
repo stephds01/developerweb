@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="app">
+<head>
+
+    <!--    meta-->
+    <meta charset="UTF-8">
+    <meta name="description" content="DSA Numerique">
+    <meta name="author" content=" DESA Stéphanie">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Open Graph data facebook-->
+    <meta property="og:title" content="Title Here"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/"/>
+    <meta property="og:image" content="http://example.com/image.jpg"/>
+    <meta property="og:description" content="Description Here"/>
+
+
+    <title ng-bind="'MyApp - ' + $root.title">MyApp - Bienvenue</title>
+    <!--<title>Developer-web à l'écoute de vos projets web</title>-->
+
+    <link href='bower_components/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="sass/style.css" type="text/css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+
+    <section class="container-fluid header">
+        <div class="container test">
+            <div class="row">
+
+            <div ng-controller="HeaderCtrl">
+                <div ng-include="'partials/header.html'"></div>
+            </div>
+
+                <div ng-view></div>
+
+            <!--<nav class="menu">-->
+                <!--<div class="menu-box">-->
+                    <!--<div class="menu-logo">-->
+                        <!--<img src="img/logo.png" height="50" width="60" alt="">-->
+                        <!--<div class="menu-icon"><i class="fa fa-times" aria-hidden="true"></i></div>-->
+                    <!--</div>-->
+                    <!--<div class="menu-items">-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/prolog.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Prolog</p>-->
+                                <!--<p>HOME</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/timestamp.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 1</p>-->
+                                <!--<p>A propos</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/user.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 2</p>-->
+                                <!--<p>Team</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/reminber.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 3</p>-->
+                                <!--<p>Services</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/portfolio.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 4</p>-->
+                                <!--<p>Portfolio</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/blog.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 5</p>-->
+                                <!--<p>Blog</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/business.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 6</p>-->
+                                <!--<p>Carrer</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<a href="">-->
+                            <!--<div class="menu-item">-->
+                                <!--<p class="menu-icon">-->
+                                    <!--<img src="img/icon/contact.png" alt="">-->
+                                <!--</p>-->
+                                <!--<p>Chapitre 7</p>-->
+                                <!--<p>Contact</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="menu-footer">-->
+                        <!--<div class="menu-background">-->
+
+                            <!--<div>-->
+
+                                <!--<i class="fa fa-facebook"></i>-->
+                                <!--<i class="fa fa-twitter"></i>-->
+                                <!--<i class="fa fa-github"></i>-->
+                                <!--<i class="fa fa-linkedin"></i>-->
+
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--Copyright 2016 Developer-web.fr-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+            </div>
+        </div>
+    </section>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js" ></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js" ></script>
+
+    <!--<script src = "http://code.jquery.com/jquery-1.11.0.min.js"> </script>-->
+    <script src = "http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js "> </script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers/HomeCtrl.js"></script>
+    <script src="js/controllers/AboutCtrl.js"></script>
+    <script src="js/controllers/TeamCtrl.js"></script>
+    <script src="js/controllers/HeaderCtrl.js"></script>
+    <script src="js/controllers/PortfolioCtrl.js"></script>
+    <script src="js/controllers/FooterCtrl.js"></script>
+
+    <script src="js/factories/MenuFactory.js"></script>
+
+
+
+    <script>
+        var buoop = {c: 2};
+        function buof() {
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            document.body.appendChild(e);
+        }
+        try {
+            document.addEventListener("DOMContentLoaded", buof, false)
+        }
+        catch (e) {
+            window.attachEvent("onload", buof)
+        }
+
+    </script>
+</body>
+</html>

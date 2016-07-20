@@ -1,0 +1,50 @@
+/*******  HEADER    *******/
+  .about {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+    margin-bottom: 70px;
+
+    position: relative;
+
+    .about-background {
+      position: absolute;
+      top: 491px;
+      left: -348px;
+    }
+
+    .about-content {
+
+      .about-box-img {
+        margin-top: 30px;
+        padding-right: 0;
+
+        .about-box {
+          padding-left:0;
+          padding-right:0;
+        }
+
+        .about-box:first-child {
+          padding-left:0;
+          padding-right:10px;
+        }
+
+        .about-box:nth-child(2) {
+          padding-left:10px;
+          padding-right:0;
+        }
+
+        .about-box-img-padding {
+          padding-bottom: 19px;
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+

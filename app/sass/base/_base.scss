@@ -1,0 +1,51 @@
+.container-fluid {
+  background-color: #282828;
+
+  border: 1px red solid;
+}
+
+.container {
+  position: relative;
+  max-width: 1750px;
+  border: 4px #eec681 solid;
+
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+}
+
+//.test::after {
+//
+//  //content: "\25BC";
+//  content: "\f103";
+//  font-family: fontawesome;
+//  display: block;
+//  width: 58px;
+//  height: 58px;
+//  /* height: 20px; */
+//  color: #eec681;
+//  text-align: center;
+//  margin-left: 50%;
+//  margin-bottom: -57px;
+//  font-size: 44px;
+//
+//}
+
+h2 {
+  color: #eec681;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+

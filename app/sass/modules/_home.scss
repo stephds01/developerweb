@@ -1,0 +1,27 @@
+/*****      HOME      *****/
+
+.home {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+
+  .home-text {
+    padding-left: 100px;
+
+    button {
+      width: 160px;
+      background-color: #282828;
+      border: 1px #eec681 solid;
+      border-radius: 25px;
+
+      padding: 10px 20px ;
+      margin-top: 20px;
+      margin-bottom: 200px;
+
+      .button-right {
+        padding-left: 15px;
+      }
+    }
+  }
+
+}

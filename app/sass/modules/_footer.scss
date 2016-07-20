@@ -1,0 +1,48 @@
+/******   FOOTER     ******/
+
+.footer {
+  //border: 1px red solid;
+
+  margin-top: 150px;
+
+  .footer-header-logo {
+    border: 1px #ff56bb solid;
+  }
+
+  .footer-title {
+    font-family: "Lato Black", sans-serif;
+    font-size: 3px;
+    color: #eee;
+    text-align: center;
+
+    border: 1px yellow solid;
+
+  }
+
+  .footer-contact {
+    border: 1px green solid;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    .footer-map {
+      border: 1px blue;
+    }
+
+    .footer-reseau {
+      border: 1px grey solid;
+      i {
+        color: $or;
+        padding-right: 20px;
+      }
+
+      .footer-sociaux {
+
+        border: 1px white solid;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,45 @@
+/*****      TEAM      *****/
+.team {
+  position: relative;
+
+  .team-background {
+    position: absolute;
+    top: 156px;
+    left: -471px;
+  }
+
+    .team-content {
+
+  }
+
+  .team-box-img {
+
+    position: relative;
+
+    .team-caption {
+      position: absolute;
+      bottom: 81px;
+      right: 22px;
+      width: 250px;
+      height: 79px;
+      background-color: #000000;
+
+        p {
+          font-family : 'Lato Light', sans-serif;
+          margin: 0;
+          padding: 10px 5px;
+
+        }
+
+        p:first-child {
+          text-transform: capitalize;
+
+          span {
+            color: $or;
+          }
+        }
+      
+
+    }
+  }
+}

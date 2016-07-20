@@ -1,0 +1,67 @@
+/*******  HEADER    *******/
+
+.header {
+  position: relative;
+
+  header {
+    border: 1px pink solid;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 90px;
+    margin-right: 90px;
+
+    .logo {
+      img {
+        height: 50px;
+      }
+    }
+
+    .header-chapiter {
+      position: relative;
+      vertical-align: middle;
+      font-family:'Merriweather Light', sans-serif;
+      font-size: 30px;
+      color: $or;
+
+      text-transform: capitalize;
+
+      .header-border {
+        position: absolute;
+        top: -9px;
+        left: 13px;
+        border: 1px $or solid;
+        height: 64px;
+        width:64px;
+      }
+
+
+    }
+
+    .header-icon {
+      border: 1px #eec681 solid;
+      padding: 5px 10px;
+      color: #eec681;
+      background-color: #282828;
+
+    }
+
+    .header-title {
+      position: relative;
+
+      .border-title {
+        position: absolute;
+        top: 0;
+        left: 45px;
+        border: 1px #eec681 solid;
+        width: 61px;
+        height: 61px;
+      }
+
+    }
+
+  }
+}
